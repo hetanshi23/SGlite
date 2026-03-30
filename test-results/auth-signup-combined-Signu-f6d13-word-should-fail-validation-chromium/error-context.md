@@ -16,7 +16,7 @@
             - text: Email
             - textbox "Email" [ref=e12]:
               - /placeholder: you@example.com
-              - text: testuser_1774867358299@example.com
+              - text: testuser_1774872587062@example.com
           - generic [ref=e13]:
             - text: Password
             - generic [ref=e14]:

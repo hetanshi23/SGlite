@@ -47,4 +47,12 @@ export class SignUpPage {
   async getPasswordValidationMessage(): Promise<string> {
     return await this.passwordInput.evaluate((el: HTMLInputElement) => el.validationMessage);
   }
+
+  async isEmailRequiredErrorVisible(): Promise<boolean> {
+    return await this.page.locator('p').filter({ hasText: 'Email is required' }).isVisible();
+  }
+
+  async isPasswordRequiredErrorVisible(): Promise<boolean> {
+    return await this.page.locator('p').filter({ hasText: 'Password is required' }).isVisible();
+  }
 }
