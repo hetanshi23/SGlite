@@ -13,6 +13,9 @@ export class DashboardPage {
   readonly purchasesMonth: Locator;
   readonly salesMonth: Locator;
   readonly dailyEntryTab: Locator;
+  readonly logProductionButton: Locator;
+  readonly addPurchaseButton: Locator;
+  readonly addSaleButton: Locator;
 
   // ── Inventory page ────────────────────────────────────────────────────────
   readonly inventoryHeading: Locator;
@@ -46,7 +49,10 @@ export class DashboardPage {
     this.lowStock      = page.getByRole('heading', { name: 'Low Stock' });
     this.purchasesMonth = page.getByRole('heading', { name: 'Purchases (Month)' });
     this.salesMonth    = page.getByRole('heading', { name: 'Sales (Month)' });
-    this.dailyEntryTab = page.getByRole('link', { name: 'Daily Entry' });
+    this.dailyEntryTab   = page.getByRole('link', { name: 'Daily Entry' });
+    this.logProductionButton = page.getByRole('button', { name: 'Log Production' });
+    this.addPurchaseButton   = page.getByRole('button', { name: 'Add Purchase' });
+    this.addSaleButton       = page.getByRole('button', { name: 'Add Sale' });
 
     // Inventory page
     this.inventoryHeading      = page.getByRole('heading', { name: 'Inventory', level: 1 });

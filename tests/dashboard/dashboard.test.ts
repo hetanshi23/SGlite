@@ -198,7 +198,3 @@ test.describe('Dashboard Tests', () => {
   });
 
 });
-
-  });
-
-});
